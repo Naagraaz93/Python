@@ -305,4 +305,6 @@ print("Compound intrest:",CI)
  The id() function returns the memory address of the object in Python, the default implementation of Python.
 
  10. What is dynamic typing?
+Ans: Dynamic typing is a feature of Python where the type of a variable is determined at runtime,
+and you can change the type of a variable by assigning a new value of a different type to it.
 """
