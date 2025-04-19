@@ -1,13 +1,22 @@
 
 ############################################ Python Datatypes ##########################################
+# What is Datatype?
+# -> Datatype is a classification of data items. It tells the compiler or interpreter what type of value a variable can hold.
 
 # Types of python Datatypes:
+
 # 1 Number
-  #  A) Integer Number # Immutable
-  #  B) float Number   # Immutable
-  #  C) complex Number # Immutable
+# What is Number?
+# -> Number is a datatype which is used to represent numeric values. It can be positive or negative whole numbers or decimal numbers.
+# Tpyes of Number:
+  #  1) Integer Number # Immutable
+  #  2) float Number   # Immutable
+  #  3) complex Number # Immutable
 
 ################ Integer Number ##################
+# What is Integer Number?
+# -> Integer is a datatype which is used to represent whole numbers. It can be positive or negative whole numbers.
+
 # type(Variable name): Know the datatypes
 
 print("########### Integer Number ##########")
@@ -36,6 +45,8 @@ Sum=a1+a2
 print(Sum,type(Sum)) # Integer
 
 print("########### Float Number ##########")
+# What is Float Number?
+# Float is a datatype which is used to represent decimal numbers. It can be positive or negative decimal numbers.
 
 ############################## Float Number #############################
 f=12.05
@@ -45,7 +56,7 @@ print(f,type(f)) # Float
 Notes:
 # Float is immutable data type.
 # There is no specific limit for float data type.
-# All the pointer value s will be consider as float.(Both postive and negative)
+# All the pointer values will be consider as float.(Both postive and negative)
 """
 f1=5522.00
 print(f1,type(f1))
@@ -63,9 +74,10 @@ print("####################### Complex Number ################################")
 
 ############################## Complex Number ################################
 '''
-# Complex number represent with X+yj
-
-
+# What is Complex Number?
+# Complex number is a datatype which is used to represent complex numbers. It can be positive or negative complex numbers.
+# Complex number is represented in the form of a+bj where a is real part and b is imaginary part.
+# Complex number is a immutable data type.  
 '''
 c=20+36j
 print(c,type(c))
@@ -88,10 +100,12 @@ print("Real number is",c6.real)
 print("Imaginary number is",c6.imag)
 
 ##################################### Sequential Datatypes #############################
+# What is Sequential Datatypes?
+# Sequential datatypes are those datatypes which are used to store multiple values in a single variable.
 '''
 # 2 Sequential Datatypes types
   #  A) String # Immutable
-  #  B) List   # Immutable
+  #  B) List   # Mutable
   #  C) Tupple # Immutable
 
 '''
@@ -130,6 +144,8 @@ print(s4,type(s4))
 print("="*30)
 print(s5,type(s5))
 print("################### Indexing ############################")
+# What is Indexing?
+# -> Indexing is used to access the elements of a string. It is done by using the index number of the element.
 In="KRISHNA"
 print(In)
 print("="*30)
@@ -149,6 +165,12 @@ Len=len(L)
 print("Length of String:",Len)
 
 print("##################################### List Datatype ###############################")
+# What is List?
+# -> List is a datatype which is used to store multiple values in a single variable. It can be of any datatype.
+# -> List is a mutable datatype. It can be modified.
+# -> List is defined by using square brackets [].
+# -> List can contain any datatype. It can be of any type.
+# -> List can contain duplicate values.
 List=[12,1,23.4,'krishna',.025,00,-65,-.025]
 
 
