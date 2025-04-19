@@ -1,6 +1,9 @@
                                 ############ CLASS : 1 ############
-############################################ Variable  ############
-import math
+############################################ Variable  ######################################################
+# What is variable?
+#-> A variable is a reserved memory location to store values. 
+#-> variables are created when you assign a value to them using the assignment operator (=).
+
 A=10
 # : A is variable.
 # : = is Assignment Opreator.
