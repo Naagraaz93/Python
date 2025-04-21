@@ -369,7 +369,8 @@ Dict1={
     'Hello':(12,13,25,36,58),
     (4,5,3):{'a':1234,'b':569},
     V:'Program',
-'Emp_Details':'Emp_Data'
+'Emp_Details':Emp_Data
 }
 print(Dict1)
+
 
