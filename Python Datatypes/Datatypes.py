@@ -164,6 +164,8 @@ L="KRISHNA Murari"
 Len=len(L)
 print("Length of String:",Len)
 
+########################################### List Data Types ###########################
+
 print("##################################### List Datatype ###############################")
 # What is List?
 # -> List is a datatype which is used to store multiple values in a single variable. It can be of any datatype.
@@ -171,7 +173,203 @@ print("##################################### List Datatype #####################
 # -> List is defined by using square brackets [].
 # -> List can contain any datatype. It can be of any type.
 # -> List can contain duplicate values.
+
 List=[12,1,23.4,'krishna',.025,00,-65,-.025]
 
+print(List) # [12,1,23.4,'krishna',.025,00,-65,-.025]
+print("="*30)
 
+List1=['krishna',100,20.50,.25,5000,bool,"Murari"]
+
+print(List1)
+print("="*30)
+
+# To add another value in list1
+# Append method is use to add value in exixting list
+
+List1.append(500)
+print(List1)
+print("="*30)
+
+# To know all types are method in python
+print(dir(list))
+
+'''
+# These are method 
+
+ ['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__
+ __doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__
+ '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__
+ '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__
+ '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear
+ 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+'''
+print("="*30)
+
+# Indexing
+List2=[(10.20,30),23.45,67,(123,345,'Krishna'),"murari"]
+
+[(10.20,30),23.45,67,(123,345,'Krishna'),"murari"]
+#   0         1   2         3               4 = Positive
+#   -5       -4  -3         -2             -1 = Negative
+
+# Get (123,345,'Krishna') from list
+print(List2[3])
+print("="*30)
+
+# Get murari from list
+print(List2[-1])
+print("="*30)
+
+# Get 23.45,67 from list
+print(List2[1],List2[2])
+print("="*30)
+
+# Get (10.20,30) and murari from list
+print(List2[-5],List2[-1]) # (10.2, 30) murari
+print("="*30)
+
+# Get 30 from list
+print(List2[-5][1]) # 30
+print("="*30)
+
+# Get 30 from list
+print(List2[0][1]) # 30
+print("="*30)
+
+List3=[('Krishna','Rajeev','Shubham'),('Murari','Pandey',"Kumar")]
+
+# Get 'Krishna Murari' Rajeev Pandey' 'Shubham Kumar' from list3
+print(List3)
+print(List3[0][0],List3[1][0]) # Krishna Murari
+print(List3[0][1],List3[1][1]) # Rajeev Pandey
+print(List3[0][2],List3[1][2]) # Shubham Kumar
+print("="*30)
+
+############################### Tupple Data type #####################################
+
+print("############################### Tupple Datatype #####################################")
+
+Tup1=(5,56,25,65,24,36,'Krishna',566.25,True,[6,9,0],(2,6))
+
+print(Tup1)
+print("="*30)
+
+'''
+Properties:
+
+1. Tupple is immutable data types, its once defined we can not change.
+2. Tupple can contain all types of datatype.
+3. Tupple follow positive and negative indexing
+4. Tupple defined with round bracket ().
+
+'''
+
+
+# Dir return list of methods belongs to specific class
+
+print(dir(Tup1)) # 
+print('='*40)
+
+print("#"*20," Indexing ","#"*20)
+
+# Tup1=    (5,56,25,65,24,36,'Krishna',566.25,True,[6,9,0],(2,6))
+# Positive= 0 1  2  3  4  5       6      7     8      9      10
+# Negative -11-10 -9 -8  -7 -6   -5    -4     -3      -2   -1 
+
+# Get [6,9,0] from tuppl1
+print(Tup1[9]) # [6, 9, 0]
+print("="*40)
+
+# Get 9 from tupple1.
+print(Tup1[9][1]) # 9
+print("="*40)
+
+# Get 'Krishna from tupple1.
+print(Tup1[-5]) # Krishna
+print("="*40)
+
+# Get 5,56,25,65,24,36 from tupple1.
+print(Tup1[0:6]) # 5,56,25,65,24,36
+print("="*40)
+
+print("#"*20," ","Count", "#"*20)
+
+Tup2=(25,65,25,95,35,25,65,25,98,100,58,25,100,658,100)
+
+print(Tup2)
+print("="*40)
+
+# Count= This method is use to how many times same number in Tup2
+
+# How many times 25 in Tup2
+print(Tup2.count(25)) # 5
+print("="*40)
+
+# How many times 100 in Tup2
+print(Tup2.count(100)) # 3
+
+############################ Dictionary Data Types #######################################
+
+print("#"*20,"  Dictionary Datatypes ","#"*20)
+
+Dic1={'A':200,'B':300,'C':500}
+print(Dic1)
+print(Dic1,type(Dic1)) # Dict
+print('='*40)
+
+'''
+Properties :
+
+1. Dictionary data type is mutable we can modify and update.
+2. Dictionary only contains unique key, Duplicate key are not allowed
+3. Dictionarystore data in key value format
+4. Dictionary only contain imuutable data type as key int, float, string, tuple, boolean,
+list, dict, set only key in dict. 
+5. Dictionary contains all diffrent data types as value
+6. Dictionary does not follow indexing
+7. Dictionary follow LIFO ( Last in First Out)
+
+'''
+Dict={'Name':'Krishna','Age':30,'City':'Noida','Email':'Krishna@gmail.com'}
+print(Dict['Name'])
+print('='*40)
+print(Dict['Age'])
+print('='*40)
+print(Dict['City'])
+print('='*40)
+print(Dict['Email'])
+print('='*40)
+
+# Add New data in Dict
+Dict['Mobile']=99256254285
+print(Dict)
+print('='*40)
+print(Dict['Mobile'])
+print('='*40)
+
+# Popitem is use to remove the latest data
+Dict.popitem()
+print(Dict)
+print('='*40)
+
+# Remove specific data from Dictionary
+
+Dict.pop('City')
+print(Dict)
+print('='*40)
+
+Emp_Data={'Emp_name':'Krishna','Emp_sal':50000,'Emp_City':'Noida'}
+V=800
+
+Dict1={
+    123:3.5,
+    3.5:123,
+    23:'Python',
+    'Hello':(12,13,25,36,58),
+    (4,5,3):{'a':1234,'b':569},
+    V:'Program',
+'Emp_Details':'Emp_Data'
+}
+print(Dict1)
 
