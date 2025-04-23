@@ -372,5 +372,96 @@ Dict1={
 'Emp_Details':Emp_Data
 }
 print(Dict1)
+# Print name from Emp_Data list
+
+print(Dict1['Emp_Details']['Emp_name'])
+
+print('='*40)
+
+
+############################ Python Sets #################################################
+
+Set={25,25,6,45,85,26,35,26,2.36,3.65,.256,}
+
+# Print the sets and type of set
+print(Set,type(Set))
+print('='*40)
+
+'''
+Properties of Sets:-
+1. Sets is  mutable datatypes, We can modify it at a point.
+2. Set only store umiqe value duplicate data are not allowed.
+3. Set store data in random order.
+4. Set only contains immutable data type as a set member.
+   in, float, string, tuple, boolean.
+5. Set does not follow indexing or key value paid format.   
+'''
+Set1={44,56,5269,'Krishna',(5,6,3,3.5),True,58}
+Set2={2,25,6,25,65,25,35,25,34,25,25,25,2,5,25,35}
+print(Set1)
+print('='*40)
+print(Set2)
+print('='*40)
+
+# Add value in Set1
+Set1.add(500)
+print(Set1)
+print('='*40)
+
+# List of method belongs to Sets data type
+
+print(dir(set))
+
+'''
+['__and__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', 
+'__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__iand__', 
+'__init__', '__init_subclass__', '__ior__', '__isub__', '__iter__', '__ixor__', '__le__', '__len__', 
+'__lt__', '__ne__', '__new__', '__or__', '__rand__', '__reduce__', '__reduce_ex__', '__repr__', 
+'__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', 
+'__xor__', 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 
+'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 
+'symmetric_difference_update', 'union', 'update']
+'''
+print('='*40)
+
+# Can not add list/dict/set as member of set
+#List/dict/set is mutable data type which is not allowed in set.
+
+############################### Boolean Datatype #########################
+
+'''
+Boolean datatypoe only contains 2 values true and false
+
+'''
+Var=True
+print(Var,type(Var))
+print('='*40)
+
+print(dir(bool))
+
+'''
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', 
+'__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', 
+'__getattribute__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__index__', '__init__', 
+'__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__',
+ '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', 
+ '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', 
+ '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', 
+ '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 
+ 'as_integer_ratio', 'bit_count', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'is_integer', 
+ 'numerator', 'real', 'to_bytes']
+'''
+print('='*40)
+
+
+
+
+############################# Data Types Interview Question ##############################
+
+'''
+# 1. What is datatype in python?
+-> Ans- 
+
+'''
 
 
