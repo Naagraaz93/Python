@@ -240,7 +240,179 @@ print(D1["B"]) # 564
 
 print("="*40)
 
-# String to 
+# String to  set
+Str12="krishna 123456"
+Set=set(Str12)
+print(Set,type(Set)) # {'1', 'k', 'h', 'n', 'a', ' ', 'r', '3', '6', '5', '2'} <class 'set'>
+print("="*40)
+
+# String to boolean
+Str13="krishna" 
+Bool=bool(Str13)
+print(Bool,type(Bool)) # True <class 'bool'>
+print("="*40)
+
+Str14=""
+Bool1=bool(Str14)   
+print(Bool1,type(Bool1)) # False <class 'bool'>
+print("="*40)
+
+Str15="0"
+Bool2=bool(Str15)   
+print(Bool2,type(Bool2)) # True <class 'bool'>
+print("="*40)   
+
+Str16="1"
+Bool3=bool(Str16)   
+print(Bool3,type(Bool3)) # True <class 'bool'>
+print("="*40)
+
+Str17="0.0"
+Bool4=bool(Str17)
+print(Bool4,type(Bool4)) # True <class 'bool'>
+print("="*40)
+
+Str18="0.0000"
+Bool5=bool(Str18)
+print(Bool5,type(Bool5)) # True <class 'bool'>
+print("="*40)
+
+# String to bytes
+Str19="krishna"
+B=bytes(Str19,encoding="utf-8")
+print(B,type(B)) # b'krishna' <class 'bytes'>
+print("="*40)
+
+# String to bytearray
+Str20="krishna" 
+Bt=bytearray(Str20,encoding="utf-8")
+print(Bt,type(Bt)) # bytearray(b'krishna') <class 'bytearray'>  
+print("="*40)
+
+####################### List Datatypes Conversion #######################
+# List to int-> Conversion is not possible.
+
+# List to float-> Conversion is not possible.
+
+# List to string
+List=["krishna",123,456,789]
+Str= str(List)
+print(Str,type(Str)) # ['krishna', 123, 456, 789] <class 'str'>
+print("="*40)
+
+# Indexing
+print(Str[0],Str[5],Str[4],Str[-1]) # [ s i ]
+print("="*40)
+
+# List to tuple
+List1=[1,2,3,4,5,(12,25,65,25),{"krishna":123,"ram":456}]
+T=tuple(List1)  
+print(T,type(T)) # (1, 2, 3, 4, 5) <class 'tuple'>
+print("="*40)
+
+# indexing
+print(T[0],T[1],T[2],T[3],T[-1]) # 1 2 3 4 {'krishna': 123, 'ram': 456}
+
+print("="*40)
+
+# List to dictionary-> Dirct Conversion is not possible.
+# but we can convert list to dictionary using zip() function.
+# Note:- The zip() function takes iterables (can be zero or more), aggregates them in a tuple, and returns it.  
+# The returned object is a zip object, which is an iterator of tuples.
+# The list should be in pair.
+# Example:
+List1=[1,2,3,4,5,(12,25,65,25),{"krishna":123,"ram":456}]
+List2=["krishna","ram","sita","gita"]
+D=dict(zip(List1,List2))  
+print(D,type(D)) # {1: 'krishna', 2: 'ram', 3: 'sita', 4: 'gita'} <class 'dict'>
+print("="*40)
+
+# List to set
+List3=[1,2,3,4,5,]
+Set=set(List3)
+print(Set,type(Set)) # {1, 2, 3, 4, 5} <class 'set'>
+print("="*40)
+
+# List to boolean
+List4=[1,2,3,4,5]
+Bool=bool(List4)    
+print(Bool,type(Bool)) # True <class 'bool'>
+print("="*40)
+
+List5=[]
+Bool1=bool(List5)   
+print(Bool1,type(Bool1)) # False <class 'bool'>
+print("="*40)
+
+List6=[0,0,0,0,0]
+Bool2=bool(List6)
+print(Bool2,type(Bool2)) # True <class 'bool'>
+print("="*40)
+
+############################### Tuple Datatypes Conversion ###############################
+# Tuple to int-> Conversion is not possible.
+# Tuple to float-> Conversion is not possible.
+# Tuple to complex-> Conversion is not possible.
+# Tuple to string
+t=(1,2,3,4,5,6,7,8,9)
+Str=str(t)  
+print(Str,type(Str)) # (1, 2, 3, 4, 5, 6, 7, 8, 9) <class 'str'>
+print("="*40)   
+
+# Indexing
+print(Str[0],Str[1],Str[2],Str[3],Str[-1]) # ( 1 ,   )
+print("="*40)
+
+# Tuple to list
+t1=(1,2,3,4,5,6,7,8,9)
+L=list(t1)
+print(L,type(L)) # [1, 2, 3, 4, 5, 6, 7, 8, 9] <class 'list'>
+print("="*40)
+
+# Tuple to dictionary-> Dirct Conversion is not possible.
+# but we can convert tuple to dictionary using zip() function.
+# Note:- The zip() function takes iterables (can be zero or more), aggregates them in a tuple, and returns it.
+# The returned object is a zip object, which is an iterator of tuples.
+# The tuple should be in pair.
+# Example:
+t1=(1,2,3,4,5,6,7,8,9)
+t2=("krishna","ram","sita","gita")
+D=dict(zip(t1,t2))
+print(D,type(D)) # {1: 'krishna', 2: 'ram', 3: 'sita', 4: 'gita'} <class 'dict'>
+print("="*40)
+
+# Tuple to set
+t2=(1,2,3,4,5,6,7,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15)
+Set=set(t2)
+print(Set,type(Set)) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15} <class 'set'>
+print("="*40)
+
+# Tuple to boolean
+t3=(1,2,3,4,5)
+Bool=bool(t3)   
+print(Bool,type(Bool)) # True <class 'bool'>
+print("="*40)
+
+t4=()
+Bool1=bool(t4)  
+print(Bool1,type(Bool1)) # False <class 'bool'>
+print("="*40)
+
+t5=(0,0,0,0,0)
+Bool2=bool(t5)
+print(Bool2,type(Bool2)) # True <class 'bool'>
+print("="*40)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
