@@ -373,7 +373,7 @@ Dict1={
 }
 print(Dict1)
 # Print name from Emp_Data list
-
+print('='*40)
 print(Dict1['Emp_Details']['Emp_name'])
 
 print('='*40)
