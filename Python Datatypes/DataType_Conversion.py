@@ -404,6 +404,194 @@ print(Bool2,type(Bool2)) # True <class 'bool'>
 print("="*40)
 
 
+############################## Dictionary Datatype conversion ##############################
+
+# Dictionary to integer -> Conversion is not possible
+# Dictionary to float -> Conversion is not possible
+# Dictionary to Complex -> Conversion is not possible
+
+# Dictionary to string
+Dic={'A':125,'B':258,'C':156}
+Str=str(Dic)
+print(Str,type(Str)) # {'A': 125, 'B': 258, 'C': 156} <class 'str'>
+
+print("="*40)
+
+print("################  Indexing    ######################")
+
+print(Str[6],Str[-6])
+
+print("="*40)
+
+# Dictionary to list
+
+Dic={'A':125,'B':258,'C':156}
+List=list(Dic)
+print(List,type(List)) # ['A', 'B', 'C'] <class 'list'>
+
+print("="*40)
+
+print("################  Indexing    ######################")
+
+print(List[2],List[-2]) # C B
+
+print("="*40)
+
+# Dictionary to tuple
+
+Dic={'A':125,'B':258,'C':156}
+Tup=tuple(Dic)
+print(Tup,type(Tup)) # ('A', 'B', 'C') <class 'tuple'>
+
+print("="*40)
+
+print("################  Indexing    ######################")
+
+print(Tup[2],Tup[-2]) # C B
+
+print("="*40)
+
+# Dictionary to set
+
+Dic={'A':125,'B':258,'C':156}
+Set=set(Dic)
+print(Set,type(Set)) # {'A', 'C', 'B'} <class 'set'>
+
+print("="*40)
+
+print("################  Indexing    ######################")
+
+# print(Set[2],Set[-2]) # C B
+
+print("="*40)
+
+# Dictionary to boolean
+
+Dic={'A':125,'B':258,'C':156}
+Bool=bool(Dic)
+print(Bool,type(Bool)) # True <class 'bool'>
+print("="*50)
+
+Dic={}
+Bool1=bool(Dic)
+print(Bool1,type(Bool1)) # False <class 'bool'>
+print("="*50)
+
+############ Set Datatype Conversion ################
+
+# Set to integer -> Conversion is not possible
+# Set to float -> Conversion is not possible
+# Set to Complex -> Conversion is not possible
+# Set to dictionary conversion is not possible.
+
+# Set to string
+Set={25,65,.35,36,(2,5,.36,3.5),"Krishna"}
+Str=str(Set)
+print(Str,type(Str)) # {0.35, 65, (2, 5, 0.36, 3.5), 'Krishna', 36, 25} <class 'str'>
+
+print("="*40)
+
+print("################  Indexing    ######################")
+
+print(Str[5],Str[-6]) # , s
+
+print("="*40)
+
+# Set to list
+
+Set={25,65,.35,36,(2,5,.36,3.5),"Krishna"}
+List=list(Set)
+print(List,type(List)) # [0.35, 65, (2, 5, 0.36, 3.5), 36, 'Krishna', 25] <class 'list'>
+
+print("="*40)
+
+print("################  Indexing    ######################")
+
+print(List[5],List[-6]) # 25 0.35
+
+print("="*40)
+
+# Set to tuple
+
+Set={25,65,.35,36,(2,5,.36,3.5),"Krishna"}
+Tup=tuple(Set)
+print(Tup,type(Tup)) # (0.35, 65, (2, 5, 0.36, 3.5), 36, 'Krishna', 25) <class 'tuple'>
+
+print("="*40)
+
+print("################  Indexing    ######################")
+
+print(Tup[5],Tup[-6]) # 25 0.35
+
+print("="*40)
+
+# Set to boolean 
+Set={25,65,.35,36,(2,5,.36,3.5),"Krishna"}
+Bool=bool(Set)
+print(Bool,type(Bool)) # True <class 'bool'>
+
+print("="*40)
+
+Set={}
+Bool=bool(Set)
+print(Bool,type(Bool)) # False <class 'bool'>
+
+print("="*40)
+
+# Boolean datatype conversion
+
+# Boolean to list -> Conversion is not possible
+# Boolean to tuple -> Conversion is not possible
+# Boolean to dictionary -> Conversion is not possible
+# Boolean to set-> conversion is not possible.
+
+# Boolean to int
+Bool=True
+Int=int(Bool)
+print(Int,type(Int)) # 1 <class 'int'>
+print("="*40)
+
+Bool=False
+Int=int(Bool)
+print(Int,type(Int)) # 0 <class 'int'>
+print("="*40)
+
+# Boolean to float
+Bool=True
+Float=float(Bool)
+print(Float,type(Float)) # 1.0 <class 'float'>
+print("="*40)
+
+Bool=False
+Float=float(Bool)
+print(Float,type(Float)) # 0.0 <class 'float'>
+print("="*40)
+
+# Boolean to complex
+
+Bool=True
+Com=complex(Bool)
+print(Com,type(Com)) # (1+0j) <class 'complex'>
+print("="*40)
+
+Bool=False
+Com=complex(Bool)
+print(Com,type(Com)) # 0j <class 'complex'>
+print("="*40)
+
+# Boolean to string
+
+Bool=True
+Str=str(Bool)
+print(Str,type(Str)) # True <class 'str'>
+print(Str[3],Str[-2]) # Indexing   (e u)
+print("="*40)
+
+Bool=False
+Str=str(Bool)
+print(Str,type(Str)) # False <class 'str'>
+print(Str[3],Str[-2]) # indexing (s s)
+print("="*40)
 
 
 
