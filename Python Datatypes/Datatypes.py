@@ -459,7 +459,7 @@ print('='*40)
 ############################# Data Types Interview Question ##############################
 
 '''
-# 1. What is datatype in python?
+ 1. What is datatype in python?
 -> Ans- 
 
 '''
